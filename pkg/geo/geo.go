@@ -35,7 +35,7 @@ var (
 
 // Function GetCode gets country code by IP address.
 func GetCode(address string) (string, error) {
-	response, err = http.Get("https://freegeoip.live/json/" + address)
+	response, err = http.Get("http://192.168.50.7/json/" + address)
 	if err != nil {
 		fmt.Println(err)
 		return "", err
